@@ -1,13 +1,45 @@
-.pagefonts {
-    font-size: 1em;
-    font-family: sans-serif;
-    font-style: normal;
-    color: black;
-}
 
 .pagefonts {
-    font-size: 1em;
+    font-size: .8em;
     font-family: sans-serif;
     font-style: normal;
-    color: black;
+    color: white;
+    text-align: center;
+}
+
+html{
+    background-color: black;
+}
+p{
+    font-family: serif;
+    font-size: 1em;
+    color: white;
+}
+
+li {
+    float: left;
+/*    align-content: center;*/
+    
+}
+
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul {
+    align-content: center;
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+li a:hover {
+    background-color: dimgrey;
 }
