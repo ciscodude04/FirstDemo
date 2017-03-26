@@ -1,47 +1,50 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/stylesheet.css">
     <title>The Calculator</title>
-    
-    </head>
-    
-    <body>
+
+</head>
+
+<body>
     <div>
         <input id="MSRP" type="text">MSRP
-        </div>
-        <div>
-            <input id="TERM" type="text">Term
-        </div>
-        
-        <div>
-            <input id="TAX" type="text">Tax
-        </div>
-        <div>
-            <input id="APR" type="text">APR
-        </div>
-        <div>
-            <input id="DOWNPAYMENT" type="text">Down Payment
-        </div>
-        <div> 
-            <input id="TRADEIN" type="text">Trade In
-        </div>
-        <p>Simple Payment Calculations</p>
-        <div>
-            <p id="monthlyPayment"></p>
-            <script>
-                $(document).ready(function() {
-                                  $('#monthlyPayment').monthlyPayments(); 
-                                  }
-                
-            </script>
-            
-        </div>
-        
-    
-    
+    </div>
+    <div>
+        <input id="TERM" type="text">Term
+    </div>
+
+    <div>
+        <input id="TAX" type="text">Tax
+    </div>
+    <div>
+        <input id="APR" type="text">
+        <p>APR</p>
+    </div>
+    <div>
+        <input id="DOWNPAYMENT" type="text">Down Payment
+    </div>
+    <div>
+        <input id="TRADEIN" type="text">Trade In
+    </div>
+    <p>Simple Payment Calculations</p>
+    <div>
+        <p id="monthlyPayment"></p>
+        <script>
+            $(document).ready(function() {
+                        $('#monthlyPayment').monthlyPayments();
+                    }
+        </script>
+
+    </div>
+
+
+
     <script type="text/javascript" src="jquery.js">
-        </script>
+    </script>
     <script type="text/javascript" src="javascript/main.js">
-        </script>
-    </body>
+    </script>
+</body>
+
 </html>
