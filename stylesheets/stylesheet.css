@@ -8,7 +8,11 @@
 }
 
 html{
+<<<<<<< HEAD
     background-color: mediumslateblue;
+=======
+    background-color: black;
+>>>>>>> 3fb5ec431eaada6e66763b2bcd9474a1f33b5315
 }
 p{
     font-family: serif;

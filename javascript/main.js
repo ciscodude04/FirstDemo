@@ -6,6 +6,7 @@ function randomOption(colors) {
 }
 
 
+<<<<<<< HEAD
 
 
 function monthlyPayments() {
@@ -17,10 +18,21 @@ function monthlyPayments() {
     var tradeIn = document.getElementById("TRADEIN").value;
     
 
+=======
+var msrp = document.getElementById('#MSRP').innerHTML;
+var tax = document.getElementById('#TERM').innerHTML;
+var term = document.getElementById('#APR').innerHTML;
+var apr = document.getElementById('#TAX').innerHTML;
+var downPayment = document.getElementById('#DOWNPAYMENT').innerHTML;
+var tradeIn = document.getElementById('#TRADEIN').innerHTML;
+
+function monthlyPayments() {
+>>>>>>> 3fb5ec431eaada6e66763b2bcd9474a1f33b5315
     var loanAmount = msrp - (downPayment - tradeIn);
     var taxTotal = loanAmount * tax;
     var aprTotal = loanAmount * apr;
     var totalLoanAmount = loanAmount + taxTotal + aprTotal;
+<<<<<<< HEAD
     var monthlyPayment = totalLoanAmount / term;
     console.log(monthlyPayment)
     document.getElementById("monthly").innerHTML = monthlyPayment;
@@ -38,3 +50,9 @@ function myfunkytion() {
 }
 
 //myfunkytion();
+=======
+    return totalLoanAmount;
+}
+
+monthlyPayments();
+>>>>>>> 3fb5ec431eaada6e66763b2bcd9474a1f33b5315
