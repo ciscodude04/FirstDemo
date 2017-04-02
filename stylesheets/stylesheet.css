@@ -1,63 +1,44 @@
-.headers {
-    font-size: 1em;
-    font-family: sans-serif;
-    font-style: normal;
-    color: white;
-    text-align: center;
-    padding: 1em 1em 1em 1em;
-    margin: 1em 1em 1em 1em;
+body {
+    background-color: black;
 }
 
-html {
-    background-color: black;
+#menulist {
+    font-family: sans-serif;
+    margin: 1px 1px 1px 1px;
+    border: 1px 1px 1px 1px;
+    padding: 1px 1px 1px 1px;
+    display: inline-block;
+    background-color: gray;
+    text-align: center;
+    float: left;
 }
 
 p {
     font-family: serif;
     font-size: 1em;
     color: white;
-}
-
-li {
-    float: left;
-    /*    align-content: center;*/
+    float: clear;
 }
 
 li a {
     display: inline-block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: .2em .2em;
     text-decoration: none;
 }
 
-ul {
-    align-content: center;
-    text-align: center;
-    list-style-type: none;
-    
-    overflow: hidden;
-    background-color: black;
-    padding: 10px 10px 10px 10px;
-    float: left;
-/*    margin: 1em 1em 4em 9em; */
-}
-
 li a:hover {
-    background-color: dimgrey;
+    color: dimgray;
 }
 
 #time {
-    float:right;
-    padding: 1em 1em 1em 1em;
-    
+    display: inline-block;
+    float: right;
+    padding: .2em .2em .2em .2em;
 }
 
-/*
-h1 {
-    color: white;
-    text-align: center;
-    padding: 1em 1em 1em 1em;
-    margin: 1em 1em 1em 1em;
+#content {
+    position: fixed;
+    float: left;
 }
-*/
