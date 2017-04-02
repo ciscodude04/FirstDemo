@@ -22,19 +22,24 @@ function monthlyPayments() {
     var aprTotal = loanAmount * apr;
     var totalLoanAmount = loanAmount + taxTotal + aprTotal;
     var monthlyPayment = totalLoanAmount / term;
-    console.log(monthlyPayment)
     document.getElementById("monthly").innerHTML = monthlyPayment;
     document.getElementById("payment").innerHTML = totalLoanAmount;
 }
 
-//monthlyPayments();
-
-function myfunkytion() {
-    var input = document.getElementById("MSRP");
-    if (input == "20") {
-        document.getElementById("myMessage").innerHTML = "You Won!";
-    } else
-        document.getElementById("myMessage").innerHTML = "You Lost";
+function getTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('time').innerHTML = h + ":" + m + ":" + s;
+    var t = setTimeout(getTime, 500);
 }
 
-//myfunkytion();
+function checkTime(i) {
+    if (i < 10) {
+        i = "0" + i;
+    }
+    return i;
+}

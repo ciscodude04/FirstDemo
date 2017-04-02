@@ -3,14 +3,17 @@
 <meta />
 
 <head>
-    <title>Home Page</title>
     <link rel="stylesheet" type="text/css" href="/stylesheets/stylesheet.css">
+
+    <title>Home Page</title>
+
 </head>
 
-<body>
+<body onload="getTime()">
+
     <div>
         <h1>
-            <span class="pagefonts"><p>Francisco J Diaz HTML, CSS, JavaScript </p></span>
+            <span class="headers"><p>Home </p></span>
         </h1>
     </div>
 
@@ -21,6 +24,14 @@
         <li> <a href="/pages/calculatorPage.html">Calculator Page</a> </li>
     </ul>
     
+    <div>
+        <p id="time"></p>
+    </div>
+
     
+
+
+    <script src="../javascript/main.js"></script>
 </body>
+
 </html>

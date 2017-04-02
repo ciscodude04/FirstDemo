@@ -1,13 +1,15 @@
-.pagefonts {
-    font-size: .8em;
+.headers {
+    font-size: 1em;
     font-family: sans-serif;
     font-style: normal;
     color: white;
     text-align: center;
+    padding: 1em 1em 1em 1em;
+    margin: 1em 1em 1em 1em;
 }
 
 html {
-    background-color: mediumslateblue;
+    background-color: black;
 }
 
 p {
@@ -33,12 +35,29 @@ ul {
     align-content: center;
     text-align: center;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    
     overflow: hidden;
     background-color: black;
+    padding: 10px 10px 10px 10px;
+    float: left;
+/*    margin: 1em 1em 4em 9em; */
 }
 
 li a:hover {
     background-color: dimgrey;
 }
+
+#time {
+    float:right;
+    padding: 1em 1em 1em 1em;
+    
+}
+
+/*
+h1 {
+    color: white;
+    text-align: center;
+    padding: 1em 1em 1em 1em;
+    margin: 1em 1em 1em 1em;
+}
+*/
