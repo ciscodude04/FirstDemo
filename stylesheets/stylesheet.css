@@ -1,44 +1,98 @@
 body {
-    background-color: black;
-}
-
-#menulist {
+    background-color: #0074D9;
     font-family: sans-serif;
-    margin: 1px 1px 1px 1px;
-    border: 1px 1px 1px 1px;
-    padding: 1px 1px 1px 1px;
-    display: inline-block;
-    background-color: gray;
-    text-align: center;
-    float: left;
+    color: black;
+    font-size: 100%;
 }
 
-p {
-    font-family: serif;
-    font-size: 1em;
-    color: white;
-    float: clear;
+#frontpagepic {
+    opacity: .4;
+    margin: -20px;
+    background-image: url("../images/code_background.PNG");
+    position: static;
+    height: 20rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
-li a {
-    display: inline-block;
-    color: white;
+#qaresourcesBackground {
+    background-image: url("../images/code_background.PNG");
+    opacity: .8;
+    position: relative;
+    height: 25em;
+    width: 100%;
+    background-position: center;
+}
+
+.pageTitle {
+    font-family: sans-serif;
+    color: chartreuse;
+    position: absolute;
+    left: 0;
+    bottom: 0;
     text-align: center;
-    padding: .2em .2em;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.home_menu {
+    background-color: white;
+    position: relative;
+    width: 100%;
+    height: 2em;
+}
+
+
+#loginLink {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color:  black;
+    top: 8px;
+    font-size: 16px;
+}
+
+.menu_links {
+    position: relative;
+    display: inline;
+    height: 40px;
+    text-align: center;
+    padding-right: 2em;
+    padding-left: 2em;
+    width: 100%;
+    top: 8px;
     text-decoration: none;
 }
 
-li a:hover {
-    color: dimgray;
+a {
+    margin-top: 10px;
+    color: black;
 }
 
-#time {
-    display: inline-block;
-    float: right;
-    padding: .2em .2em .2em .2em;
+a:hover {
+    color: dodgerblue;
 }
 
-#content {
-    position: fixed;
-    float: left;
+#Center-Object {
+/*    position: relative;*/
+    width: 50%;
+    height: 5em;
+    top: 100px;
+    margin-top: 50px;
+    text-align: center;
+    margin: auto;
+    border: 2px dotted green;
+    background-color: aliceblue;
+}
+
+#home2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: aquamarine;
 }

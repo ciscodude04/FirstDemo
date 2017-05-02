@@ -6,6 +6,9 @@ function randomOption(colors) {
 }
 
 
+function myfunck() {
+
+}
 
 
 function monthlyPayments() {
@@ -33,6 +36,7 @@ function getTime() {
     var s = today.getSeconds();
     m = checkTime(m);
     s = checkTime(s);
+//    h = resetTime(h);
     document.getElementById('time').innerHTML = h + ":" + m + ":" + s;
     var t = setTimeout(getTime, 500);
 }
@@ -43,7 +47,6 @@ function checkTime(i) {
     }
     return i;
 }
-
 
 function myFunction() {
     var x = document.createElement("INPUT");
