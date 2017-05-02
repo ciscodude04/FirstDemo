@@ -1,8 +1,48 @@
 body {
-    background-color: #0074D9;
+    background-color: #535C6F;
     font-family: sans-serif;
     color: black;
     font-size: 100%;
+}
+
+.home_menu {
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    height: 2em;
+    border-radius: 2px;
+    z-index: 1;
+    margin-top: -10px;
+    margin-left: -10px;
+}
+
+.menu_links {
+    position: relative;
+    display: inline;
+    text-align: center;
+    padding-right: 2em;
+    padding-left: 2em;
+    width: 100%;
+    top: 8px;
+    text-decoration: none;
+}
+
+a {
+    margin-top: 10px;
+    color: #2868FE;
+}
+
+a:hover {
+    color: #535C6F;
+}
+
+.content {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    background-color: white;
+    border-radius: 50px;
+    border: -10px solid #868686;
 }
 
 #frontpagepic {
@@ -40,43 +80,18 @@ body {
     font-weight: bold;
 }
 
-.home_menu {
-    background-color: white;
-    position: relative;
-    width: 100%;
-    height: 2em;
-}
-
-
 #loginLink {
     position: absolute;
-    right: 0;
+    right: 1px;
     top: 0;
     color:  black;
     top: 8px;
     font-size: 16px;
+    width: 3%
+
 }
 
-.menu_links {
-    position: relative;
-    display: inline;
-    height: 40px;
-    text-align: center;
-    padding-right: 2em;
-    padding-left: 2em;
-    width: 100%;
-    top: 8px;
-    text-decoration: none;
-}
 
-a {
-    margin-top: 10px;
-    color: black;
-}
-
-a:hover {
-    color: dodgerblue;
-}
 
 #Center-Object {
 /*    position: relative;*/
@@ -96,3 +111,4 @@ a:hover {
     right: 0;
     background-color: aquamarine;
 }
+
