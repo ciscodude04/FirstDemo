@@ -3,23 +3,36 @@
 
 <head>
     <link rel="stylesheet" type="text/css" href="../stylesheets/stylesheet.css">
-    <title>The Calculator</title>
-
+    <title>The Calculator Page </title>
 </head>
 
-<body>
-   <h1 class="headers"> The Simple Calculator</h1>
-   
-   <div><p>Let's find out how much you would pay for your car.</p></div>
-    <div>
-        <input id="MSRP" type="text" value="" placeholder="Msrp">
+<body onload="getTime()">
+    <div id="qaresourcesBackground">
+        <div class="pageTitle">
+            Demo Site
+        </div>
     </div>
-<!--
-    <button id="submitnigga" onclick="myfunkytion()">My button</button>
-    <p id="myMessage"></p>
-    
-    
--->
+    <div class="home_menu">
+        <a class="menu_links" href="../index.html">Home</a>
+        <a class="menu_links" href="../index.html">Forums</a>
+        <a class="menu_links" href="qaresources.html">QA Resources</a>
+        <a class="menu_links" href="calculatorPage.html">Calculator Page</a>
+        <a class="menu_links" href="../index.html">Contact Us</a>
+        <a class="menu_links" href="../index.html">About Me</a>
+        <div id="loginLink">
+            <!--TODO: Need to turn this into link and log in-->
+            Sign In
+        </div>
+    </div>
+
+
+    <h1 class="headers"> The Simple Calculator</h1>
+    <div>
+        <p>Let's find out how much you would pay for your car.</p>
+    </div>
+    <div>
+        <input id="MSRP" type="text" value="" placeholder="Msrp">Msrp
+    </div>
     <div>
         <input id="TERM" type="text" value="" placeholder="Term">Term
     </div>
@@ -38,14 +51,10 @@
     </div>
     <p>Loan Amount</p>
     <p id="payment"></p>
-    <p>Monthly Payments</p>
+    <p>Monthly Payments: </p>
     <p id="monthly"></p>
-    
     <button onclick="monthlyPayments()">Calculator</button>
-
-    <script src="../javascript/main.js" >
-    </script>
-    
+    <script src="../javascript/main.js"></script>
 </body>
 
 </html>
