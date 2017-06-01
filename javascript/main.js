@@ -6,11 +6,6 @@ function randomOption(colors) {
 }
 
 
-function myfunck() {
-
-}
-
-
 function monthlyPayments() {
     var msrp = document.getElementById("MSRP").value;
     var term = document.getElementById("TERM").value;
@@ -36,7 +31,7 @@ function getTime() {
     var s = today.getSeconds();
     m = checkTime(m);
     s = checkTime(s);
-//    h = resetTime(h);
+    //    h = resetTime(h);
     document.getElementById('time').innerHTML = h + ":" + m + ":" + s;
     var t = setTimeout(getTime, 500);
 }
@@ -53,4 +48,27 @@ function myFunction() {
     x.setAttribute("type", "text");
     x.setAttribute("value", "Hello World!");
     document.body.appendChild(x);
+}
+
+function createBreak() {
+    var newbreak = document.createElement("br");
+    return newbreak;
+}
+
+function addArticle() {
+    var newArticle = document.createElement("div");
+    newArticle.setAttribute("class", "content");
+    var newText = document.createElement("b");
+    var article_title = prompt("Enter title: ", "");
+    var t = document.createTextNode(article_title);
+    newText.appendChild(t);
+    newArticle.appendChild(newText);
+    newArticle.appendChild(createBreak());
+    var newText2 = document.createElement("p");
+    var article_body = prompt("Enter body:", "");
+    var body = document.createTextNode(article_body);
+    newText2.appendChild(body);
+    newArticle.appendChild(newText2);
+    var parentElement = document.getElementById("container");
+    parentElement.appendChild(newArticle);
 }

@@ -1,66 +1,38 @@
 body {
-    background-color: #0074D9;
+    background-color: #535C6F;
     font-family: sans-serif;
     color: black;
     font-size: 100%;
 }
 
-#frontpagepic {
-    opacity: .4;
-    margin: -20px;
-    background-image: url("../images/code_background.PNG");
-    position: static;
-    height: 20rem;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-}
-
 #qaresourcesBackground {
     background-image: url("../images/code_background.PNG");
-    opacity: .8;
+    opacity: .7;
     position: relative;
     height: 25em;
     width: 100%;
     background-position: center;
-}
-
-.pageTitle {
-    font-family: sans-serif;
-    color: chartreuse;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    text-align: center;
-    font-size: 3em;
-    font-weight: bold;
+    margin-left: 0px;
+    padding-right: .5em;
 }
 
 .home_menu {
-    background-color: white;
-    position: relative;
+    background-color: gray;
+    position: fixed;
     width: 100%;
     height: 2em;
-}
-
-
-#loginLink {
-    position: absolute;
-    right: 0;
-    top: 0;
-    color:  black;
-    top: 8px;
-    font-size: 16px;
+    border-radius: 2px;
+    z-index: 1;
+    margin-top: -10px;
+    margin-left: -10px;
+/*    padding-top: 8px;*/
+/*    text-align: center;*/
+/*    font-weight: 800;*/
 }
 
 .menu_links {
     position: relative;
     display: inline;
-    height: 40px;
     text-align: center;
     padding-right: 2em;
     padding-left: 2em;
@@ -71,11 +43,58 @@ body {
 
 a {
     margin-top: 10px;
-    color: black;
+    color: white;
 }
 
 a:hover {
-    color: dodgerblue;
+    color: #535C6F;
+}
+
+#container {
+    width: 80%;
+    height: auto;
+/*    align-content: center;*/
+}
+
+.content {
+    width: 25%;
+    text-align: center;
+    background-color: white;
+    border-radius: 3em;
+/*    border: -10px solid #868686;*/
+    margin: 1%;
+    float:left;
+}
+
+.adright1 {
+    float: right;
+    background-color: blue;
+    height: 30em;
+    width: 20%;
+    margin-top: 1em;
+    margin-left: 1em;
+}
+
+.pageTitle {
+    font-family: sans-serif;
+    color: White;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    font-size: 3em;
+    font-weight:600;
+}
+
+#loginLink {
+    position: absolute;
+    right: 1px;
+    top: 0;
+    color:  black;
+    top: 8px;
+    font-size: 16px;
+    width: 3%
+
 }
 
 #Center-Object {
@@ -96,3 +115,4 @@ a:hover {
     right: 0;
     background-color: aquamarine;
 }
+
