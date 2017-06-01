@@ -10,24 +10,24 @@ body {
     opacity: .7;
     position: relative;
     height: 25em;
-    width: auto;
+    width: 100%;
     background-position: center;
-    margin-left: -10px;
-/*    right: 0;*/
+    margin-left: 0px;
+    padding-right: .5em;
 }
 
 .home_menu {
-    background-color: black;
+    background-color: gray;
     position: fixed;
     width: 100%;
-    height: 3em;
+    height: 2em;
     border-radius: 2px;
     z-index: 1;
     margin-top: -10px;
     margin-left: -10px;
-    padding-top: 8px;
-    text-align: center;
-    font-weight: 800;
+/*    padding-top: 8px;*/
+/*    text-align: center;*/
+/*    font-weight: 800;*/
 }
 
 .menu_links {
@@ -50,13 +50,29 @@ a:hover {
     color: #535C6F;
 }
 
-.content {
+#container {
     width: 80%;
-    margin: auto;
+    height: auto;
+/*    align-content: center;*/
+}
+
+.content {
+    width: 25%;
     text-align: center;
     background-color: white;
-    border-radius: 50px;
-    border: -10px solid #868686;
+    border-radius: 3em;
+/*    border: -10px solid #868686;*/
+    margin: 1%;
+    float:left;
+}
+
+.adright1 {
+    float: right;
+    background-color: blue;
+    height: 30em;
+    width: 20%;
+    margin-top: 1em;
+    margin-left: 1em;
 }
 
 .pageTitle {
@@ -67,7 +83,7 @@ a:hover {
     bottom: 0;
     text-align: center;
     font-size: 3em;
-    font-weight: bold;
+    font-weight:600;
 }
 
 #loginLink {
